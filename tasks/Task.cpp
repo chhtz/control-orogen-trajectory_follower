@@ -203,8 +203,6 @@ void Task::updateHook()
 void Task::errorHook()
 {
     TaskBase::errorHook();
-    Motion2D motionCommand{};
-    _motion_command.write(motionCommand.toBaseMotion2D());
 }
 
 void Task::stopHook()
